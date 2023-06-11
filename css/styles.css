@@ -387,6 +387,17 @@ body {
     fill: currentColor;
 }
 
+.privacy-policy {
+    margin-left: 3px;
+    color: var(--link-color);
+}
+
+.send {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
 /*------------- Footer -------------*/
 
 .footer {
@@ -614,6 +625,120 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+
+.modal-title {
+    margin-top: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form {}
+
+.modal-input-block {
+    margin-top: 16px;
+}
+
+.modal-text-box {
+    font-size: 12px;
+    line-height: 0.86;
+    letter-spacing: 0.04em;
+    color: var(--customers-icon);
+    display: block;
+    margin-top: 8px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--modal-bg-color);
+    border-radius: 4px;
+    padding-left: 38px;
+    outline: transparent;
+}
+
+.modal-input:focus,
+.modal-comment:focus {
+    border-color: var(--link-color);
+}
+
+.modal-input:focus+.modal-icon {
+    fill: var(--link-color);
+}
+
+.modal-position {
+    position: relative;
+    margin-top: 4px;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+}
+
+.modal-input::placeholder,
+.modal-comment::placeholder {
+    font-size: 12px;
+    line-height: 0.86;
+    letter-spacing: 0.04em;
+    color: var(--modal-bg-color);
+}
+
+.modal-field {
+    margin-top: 8px;
+}
+
+.modal-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--modal-bg-color);
+    border-radius: 4px;
+    margin-top: 4px;
+    resize: none;
+    padding: 8px 16px;
+    outline: transparent;
+}
+
+.modal-field-check {
+    margin-top: 16px;
+}
+
+.check-text {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 0.86;
+    letter-spacing: 0.04em;
+    color: var(--customers-icon);
+}
+
+.check-text span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--modal-bg-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.modal-check:checked+.check-text span {
+    background-color: var(--hover-color);
+    border: none;
+    border-color: 1px solid var(--hover-color);
+    fill: var(--cloud-footer-color);
+}
+
+/*------------- Frames -------------*/
 
 @keyframes social-icon {
     0% {
