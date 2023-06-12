@@ -129,7 +129,7 @@
                 <h2 class="section-title">Our Team</h2>
                 <ul class="list">
                     <li class="cloud-list">
-                        <img src="./images/Mark-Guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
+                        <img src="./images/Mark-s/img" alt="Mark Guerrero" width="264" height="260" />
                         <div class="text-team">
                             <h3 class="section-list team">Mark Guerrero</h3>
                             <p class="text team">Product Designer</p>
@@ -373,6 +373,20 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-email">
+                <p class="footer-social-text">Subscribe</p>
+                <form class="footer-email-form">
+                    <label class="footer-email-check">
+                        <input type="email" name="footer-email" placeholder="E-mail" class="footer-email-input" />
+                    </label>
+                    <button type="submit" class="button footer-buttom">
+                        Subscribe<svg class="footer-subscribe" width="24" height="24">
+                            <use href="./images/icons.svg#icon-cover-list"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -386,15 +400,17 @@
             <p class="modal-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <div class="modal-input-block">
-                    <label for="modal-name" class="modal-text-box">Name</label>
+                    <label for="user-name" class="modal-text-box">Name</label>
                     <div class="modal-position">
-                        <input type="text" class="modal-input" name="modal-name" id="modal-name"
+                        <input type="text" id="user-name" name="user-name" class="modal-input"
                             placeholder="Petro Petrovich" required />
-                        <svg class="modal-icon" width="18" height="18">
+                        <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
+                </div>
 
+                <div class="modal-input-block">
                     <label for="modal-phone" class="modal-text-box">Phone</label>
                     <div class="modal-position">
                         <input type="tel" class="modal-input" name="modal-phone" id="modal-phone"
@@ -403,7 +419,9 @@
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
+                </div>
 
+                <div class="modal-input-block">
                     <label for="modal-email" class="modal-text-box">Email</label>
                     <div class="modal-position">
                         <input type="email" class="modal-input" name="modal-email" id="modal-email"
@@ -412,27 +430,26 @@
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
-
-                    <div class="modal-field">
-                        <label for="modal-content" class="modal-text-box">Content</label>
-                        <textarea class="modal-comment" id="modal-content" name="modal-content"
-                            placeholder="Text input"></textarea>
-                    </div>
-
-                    <div class="modal-field-check">
-                        <input type="checkbox" id="privacy" name="privacy" value="true"
-                            class="modal-check visually-hidden" />
-                        <label for="privacy" class="check-text">
-                            <span>
-                                <svg class="check-icon" width="10" height="8">
-                                    <use href="./images/icons.svg#icon-check-mark"></use>
-                                </svg></span>I accept the terms and conditions of the
-                            <a href="" class="privacy-policy">Privacy Policy</a></label>
-                    </div>
                 </div>
-                <div class="send">
-                    <button type="submit" class="button">Send</button>
+
+                <div class="modal-field">
+                    <label for="user-comment" class="modal-text-box">Comment</label>
+                    <textarea class="modal-comment" id="user-comment" name="user-comment"
+                        placeholder="Text input"></textarea>
                 </div>
+
+                <div class="modal-field-check">
+                    <input type="checkbox" id="user-privacy" name="user-privacy" value="true"
+                        class="modal-check visually-hidden" />
+                    <label for="user-privacy" class="check-text">
+                        <span class="privacy-icon">
+                            <svg class="check-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-check-mark"></use>
+                            </svg></span>I accept the terms and conditions of the
+                        <a href="" class="privacy-policy">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" class="button modal-button">Send</button>
             </form>
         </div>
     </div>
